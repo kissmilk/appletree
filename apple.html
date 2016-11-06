@@ -1,0 +1,164 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html lang="en">
+<head>
+	<meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+	<title>apple</title>
+	<style type="text/css">
+  *{
+	margin: 0;
+	padding: 0;
+   }
+	.h1_title{
+	font-weight:normal;
+	text-align: center;
+	margin: 10px 0;
+    }
+    .bigbox{
+    	width: 1315px;
+	    height: 560px;
+	    margin: 0 auto;
+    }
+	#bgbox{
+	    width: 1315px;
+	    height: 560px;
+	    background:url(images/icon-03.png) no-repeat left;
+	    margin-left: 5px;
+	    border: 1px solid #fff;
+	    position: relative;
+    }
+    #img0{
+    	margin-left: 230px;
+    	margin-top: 155px;
+    }
+    table{
+    	border: 1px solid #808080;
+    	/*border-collapse: collapse;*/
+    	float: right;
+    	margin-top: 35px;
+    	display: none;
+    }
+    table tr td{
+    	border:1px solid #808080;
+    	text-align: center; 	
+    }
+    #Q{
+    	border:none;
+    	background-color: #808080;
+    	width: 110px;
+    	height: 30px;
+    }
+    #H{
+    	width: 168px;
+    	height: 30px;
+    }
+    .image{ position: absolute; cursor: pointer;}
+    #img1{top:180px;left: 490px;}
+    #img2{top:210px;left: 490px;}
+    #img3{top:170px;left: 515px;}
+    #img4{top:330px;left: 260px;}
+    #img5{top:295px;left: 450px;}
+    #img6{top:260px;left: 465px;}
+    #img7{top:340px;left: 310px;}
+    #img8{top:280px;left: 310px;}
+    #img9{top:280px;left: 340px;}
+    #img10{top:300px;left: 570px;}
+    #img11{top:280px;left: 600px;}
+    #img12{top:170px;left: 310px;}
+    #img13{top:200px;left: 350px;}
+    #img14{top:400px;left: 280px;}
+    #img15{top:400px;left: 570px;}
+
+	</style>
+	<script type="text/javascript">
+		window.onload=function(){
+			var img1=document.getElementById("img1");
+			var img2=document.getElementById("img2");
+			var img3=document.getElementById("img3");
+			for(var i=0;i<=3;i++){
+				var newimg1=img1.cloneNode(false);
+				bgbox.appendChild(newimg1);
+				var newimg2=img2.cloneNode(false);
+				bgbox.appendChild(newimg2);
+				var newimg3=img3.cloneNode(false);
+				bgbox.appendChild(newimg3);
+			}
+			var imgs=document.getElementsByTagName("img");
+			for(var i=4; i<=15;i++){
+                imgs[i].setAttribute("id","img"+i);
+                imgs[i].setAttribute("class","image");
+			}
+			var tables=document.getElementsByTagName("table");
+			var handler=function(){
+				tables[0].style.display="block";
+			}
+			Array.prototype.slice.call(tables,1);
+			
+		    imgs[1].onclick=handler;
+		    imgs[2].onclick=handler;
+		    imgs[3].onclick=handler;
+		    imgs[4].onclick=handler;
+            imgs[5].onclick=handler;
+		    imgs[6].onclick=handler;
+		    imgs[7].onclick=handler;
+		    imgs[8].onclick=handler;
+		    imgs[9].onclick=handler;
+		    imgs[10].onclick=handler;
+		    imgs[11].onclick=handler;
+		    imgs[12].onclick=handler;
+		    imgs[13].onclick=handler;
+		    imgs[14].onclick=handler;
+		    imgs[15].onclick=handler;
+		    
+
+
+
+
+
+
+		}
+		
+	</script>
+<body>
+	<h1 class="h1_title" id="top">学生个性成长网络平台卡通模式--罗竞</h1>
+	<div class="bigbox">
+	<div id="bgbox">
+		<img src="images/icon-02.png" id="img0">
+
+		<img src="images/icon-04.png" id="img1" class="image">
+		<img src="images/icon-05.png" id="img2" class="image">
+		<img src="images/icon-06.png" id="img3" class="image">
+		<table cellpadding="0" cellspacing="0" >
+			<tbody>
+				<tr>
+					<td id="Q" >姓名</td>
+					<td id="H">罗竞</td>
+				</tr>
+				<tr>
+					<td id="Q">实践名称</td>
+					<td id="H">达标情况记录</td>
+				</tr>
+				<tr>
+					<td id="Q">活动名称</td>
+					<td id="H">12</td>
+				</tr>
+				<tr>
+					<td id="Q">成绩</td>
+					<td id="H">21</td>
+				</tr>
+				<tr>
+					<td id="Q">得分</td>
+					<td id="H">2</td>
+				</tr>
+				<tr>
+					<td id="Q">评价等级</td>
+					<td id="H">C</td>
+				</tr>
+			</tbody>
+		</table>
+		</div>
+
+	</div>
+	
+	
+</body>
+</html>

@@ -1,0 +1,112 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html lang="en">
+<head>
+	<meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+	<title>Apple Tree</title>
+	<style type="text/css">
+	*{
+	margin: 0;
+	padding: 0;
+}
+	.h1_title{
+	font-weight:normal;
+	text-align: center;
+	margin: 10px 0;
+}
+	#bgbox{
+	    width: 1005px;
+	    height: 620px;
+	    background:url(images/icon-07.png) no-repeat center;
+	    margin: 0 auto;
+	    border: 1px solid #fff;
+	    position: relative;
+    }
+    #img0{
+    	margin-top: 191px;
+    	margin-left: 12px;
+
+    }
+    .image{
+    	position:absolute;
+    	/*cursor:pointer;*/
+    }
+   
+	</style>
+	<script type="text/javascript">
+		window.onload=function(){
+			var imgs=document.getElementsByTagName("img");
+			var as=document.getElementsByTagName("a");
+			imgs[1].setAttribute("id","img2");
+			var bgbox=document.getElementById("bgbox");
+			for(var i=0; i<29;i++){
+				var newa=document.createElement("a");
+				bgbox.appendChild(newa);
+				var newimg=img2.cloneNode(false);
+				as[i+1].appendChild(newimg);
+				as[i+1].setAttribute("target","_blank");
+			}
+			var arr=["","金钟国","刘在石","懵智孝","HAHA","李光洙","王鼻子","郑爽","宝宝","张继科","马龙","孙杨","宁择涛","larry","tom","lerry","金钟国","刘在石","懵智孝","HAHA","李光洙","王鼻子","郑爽","宝宝","张继科","马龙","孙杨","宁择涛","larry","tom","lerry"];
+			for(var i=1; i<=30;i++){
+				imgs[i].setAttribute("id","img"+i);
+				imgs[i].setAttribute("class","image");
+				imgs[i].setAttribute("title",arr[i]);
+
+				
+			 }
+			var left=60;
+			var top=365;
+			for(i=1;i<=6;i++){
+				imgs[i].style.left=left+"px";
+				imgs[i].style.top=top+"px";
+				var left=left+68;
+				var top= top-33;
+				}
+			var left=135;
+			var top=385;
+			for(i=7;i<=12;i++){
+				imgs[i].style.left=left+"px";
+				imgs[i].style.top=top+"px";
+				var left=left+68;
+				var top= top-36;
+				}
+			var left=210;
+			var top=400;
+			for(i=13;i<=18;i++){
+				imgs[i].style.left=left+"px";
+				imgs[i].style.top=top+"px";
+				var left=left+68;
+				var top= top-36;
+				}
+			var left=290;
+			var top=420;
+			for(i=19;i<=24;i++){
+				imgs[i].style.left=left+"px";
+				imgs[i].style.top=top+"px";
+				var left=left+65;
+				var top= top-37;
+				}
+			var left=370;
+			var top=435;
+			for(i=25;i<=30;i++){
+				imgs[i].style.left=left+"px";
+				imgs[i].style.top=top+"px";
+				var left=left+65;
+				var top= top-38;
+				}
+			for(var i=1;i<=30;i++){
+			 	as[i].setAttribute("href","apple.html#top");
+			 }
+
+		}
+		
+	</script>
+</head>
+<body>
+    <h1 class="h1_title">学生个性成长网络平台卡通模式</h1>
+	<div id="bgbox">
+		<img id="img0" src="images/icon-08.png">
+		<a href="apple.html#top" target="_blank"><img  src="images/icon-09.png"></a>	
+	</div>
+	
+</body>
+</html>
